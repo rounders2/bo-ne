@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bò Né Lăng Ông</title>
+<meta name="description" content="Bò né chảo nóng, quán ăn sáng trứ danh Quy Nhơn. Mở cửa 6:00 - 11:00 mỗi ngày.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#top" class="logo">Bò Né <span>Lăng Ông</span></a>
+  <div class="header-right">
+    <nav class="main-nav">
+      <a href="#menu" data-i18n="navMenu"></a>
+      <a href="#gioith" data-i18n="navHours"></a>
+      <a href="#timduong" data-i18n="navFind"></a>
+    </nav>
+    <div class="lang-toggle">
+      <button id="btn-vi" type="button">VI</button>
+      <button id="btn-en" type="button">EN</button>
+    </div>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="hero-badge">🔥 <span data-i18n="heroBadge"></span></p>
+      <h1 class="hero-title"><span class="line1" data-i18n="heroTitle1"></span><br><span class="line2" data-i18n="heroTitle2"></span></h1>
+      <p class="hero-sub" data-i18n="heroSub"></p>
+      <div class="hero-actions">
+        <a href="#menu" class="hero-cta" data-i18n="heroCta"></a>
+        <span class="hero-price" data-i18n="heroPrice"></span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="steam"><span></span><span></span><span></span></div>
+      <div class="hero-plate-wrap">
+        <div class="hero-plate">
+          <video src="./assets/sizzle.mp4" poster="./assets/bone-photo.jpeg" autoplay muted loop playsinline></video>
+        </div>
+        <div class="hero-tag" data-i18n="heroTag"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marquee-track">
+    <span id="marquee-a"></span><span id="marquee-b"></span>
+  </div>
+</div>
+
+<section id="menu" class="section">
+  <p class="kicker">01 — <span data-i18n="menuKicker"></span></p>
+  <div class="section-head">
+    <h2 class="section-title" data-i18n="menuTitle"></h2>
+    <span class="veg-legend">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="#2E5230"><path d="M20 4c-8 0-14 3-15 11 0 0 5-7 12-8-6 3-9 7-10 12 1-1 2-2 4-3 1 .5 2.5 1 4 1 6 0 7-7 5-13z"></path></svg>
+      <span data-i18n="vegLegend"></span>
+    </span>
+  </div>
+  <p class="section-sub" data-i18n="menuSub"></p>
+
+  <div class="menu-grid" id="menu-grid"></div>
+
+  <div class="drinks-panel">
+    <div class="drinks-head">
+      <h3 data-i18n="drinksTitle"></h3>
+      <span data-i18n="drinksSub"></span>
+    </div>
+    <div class="drinks-grid">
+      <div class="drinks-photo"><img src="./assets/bone-coffee-photo.png" alt="Iced milk coffee" style="width:100%;height:100%;object-fit:cover;object-position:31% 66%;transform:scale(1.85);transform-origin:31% 66%"></div>
+      <div class="drinks-lists">
+        <div>
+          <p class="drinks-col-title" data-i18n="coffeeHeading"></p>
+          <div id="drinks-coffee"></div>
+        </div>
+        <div>
+          <p class="drinks-col-title" data-i18n="juiceHeading"></p>
+          <div id="drinks-juice"></div>
+        </div>
+      </div>
+      <div class="drinks-photo"><img src="./assets/bone-juice-photo.png" alt="Fresh orange juice" style="width:100%;height:100%;object-fit:cover;object-position:31% 66%;transform:scale(1.85);transform-origin:31% 66%"></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-section">
+  <p class="quote-text" data-i18n="quote"></p>
+  <p class="quote-sub" data-i18n="quoteSub"></p>
+</section>
+
+<section id="gioith" class="section">
+  <div class="hours-card">
+    <div>
+      <p class="kicker">02 — <span data-i18n="hoursKicker"></span></p>
+      <h2 data-i18n="hoursTitle"></h2>
+      <p class="lead" data-i18n="hoursSub"></p>
+    </div>
+    <div class="hours-box">
+      <div class="hours-open">
+        <p class="label" data-i18n="hoursHeading"></p>
+        <div class="hours-time-row">
+          <span class="days" data-i18n="hoursDaily"></span>
+          <span class="time">6:00 — 11:00 am</span>
+        </div>
+      </div>
+      <div class="hours-sellout">
+        <p data-i18n="sellOut"></p>
+        <p data-i18n="sellOutSub"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:60px">
+  <p class="kicker">03 — <span data-i18n="galleryKicker"></span></p>
+  <h2 class="section-title" style="margin-bottom:36px" data-i18n="galleryTitle"></h2>
+  <div class="gallery-grid">
+    <div class="gallery-item big"><img src="./assets/bone-spread-photo.jpg" alt="Breakfast spread: sizzling eggs, bánh mì and fresh veggies" style="width:100%;height:100%;object-fit:cover;object-position:45% 55%"></div>
+    <div class="gallery-item"><img src="./assets/bone-street-photo.jpg" alt="Morning crowd under the umbrellas" style="width:100%;height:100%;object-fit:cover;object-position:50% 55%"></div>
+    <div class="gallery-item"><img src="./assets/bone-beef-photo.jpg" alt="Sizzling beef plate" style="width:100%;height:100%;object-fit:cover;object-position:50% 65%"></div>
+    <div class="gallery-item"><img src="./assets/bone-egg-photo.jpg" alt="Sizzling eggs plate" style="width:100%;height:100%;object-fit:cover;object-position:55% 80%"></div>
+    <div class="gallery-item"><img src="./assets/bone-group-photo.jpg" alt="The quán owner with regulars" style="width:100%;height:100%;object-fit:cover;object-position:50% 35%"></div>
+  </div>
+</section>
+
+<section class="reviews-section">
+  <div class="reviews-inner">
+    <div class="reviews-head">
+      <div>
+        <p class="kicker">04 — <span data-i18n="reviewKicker"></span></p>
+        <h2 class="section-title" data-i18n="reviewTitle"></h2>
+      </div>
+      <div class="reviews-arrows">
+        <button id="reviews-prev" type="button" aria-label="Previous reviews">←</button>
+        <button id="reviews-next" type="button" aria-label="Next reviews">→</button>
+      </div>
+    </div>
+    <div class="reviews-rail" id="reviews-rail"></div>
+  </div>
+</section>
+
+<section id="timduong" class="section">
+  <p class="kicker">05 — <span data-i18n="findKicker"></span></p>
+  <h2 class="section-title" style="margin-bottom:36px" data-i18n="findTitle"></h2>
+  <div class="find-grid">
+    <div class="find-map">
+      <a class="find-map-link" href="https://maps.app.goo.gl/8U4zz2TY693hDBmB7" target="_blank" rel="noopener" aria-label="Open in Google Maps">
+        <img src="./assets/map-static.png" alt="Map to Bò Né Lăng Ông" loading="lazy">
+      </a>
+    </div>
+    <div class="find-side">
+      <div class="find-card">
+        <p class="label" data-i18n="addrLabel"></p>
+        <p class="find-addr" data-i18n="addr"></p>
+        <p class="find-addr-note" data-i18n="addrNote"></p>
+      </div>
+      <div class="find-card landmark-card">
+        <p class="label" data-i18n="landmarkLabel"></p>
+        <div id="landmarks"></div>
+      </div>
+      <div class="phone-card">
+        <span class="label" data-i18n="phoneLabel"></span>
+        <span class="num">0918 455 001</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p class="brand">Bò Né Lăng Ông</p>
+  <p class="line" data-i18n="footerLine"></p>
+  <p class="meta">Quy Nhơn · 6:00–11:00 · 0918 455 001</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
