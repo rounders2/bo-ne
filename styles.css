@@ -290,7 +290,7 @@ button { font-family: inherit; }
   display: grid; place-items: center; transition: background .15s ease;
 }
 .reviews-arrows button:hover { background: var(--gold); }
-.reviews-rail { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 14px; scrollbar-width: thin; }
+.reviews-rail { display: flex; align-items: flex-start; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 14px; scrollbar-width: thin; }
 .review-card {
   background: var(--cream-2); border: 2px solid var(--ink); border-radius: 18px; padding: 26px; margin: 0;
   box-shadow: 5px 5px 0 var(--gold); display: flex; flex-direction: column; gap: 14px;
