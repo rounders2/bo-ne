@@ -322,7 +322,7 @@ button { font-family: inherit; }
   display: flex; justify-content: space-between; align-items: center; gap: 14px;
 }
 .phone-card .label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--sage); }
-.phone-card .num { font-family: 'Anton', sans-serif; font-size: 22px; letter-spacing: 1px; }
+.phone-card .num, .phone-card .num:hover, .phone-card .num:active { font-family: 'Anton', sans-serif; font-size: 22px; letter-spacing: 1px; color: var(--cream); }
 
 @media (max-width: 860px) {
   .find-grid { grid-template-columns: 1fr; }
